@@ -22,9 +22,3 @@ body {
 }
 
 
-/* DEBUG RULE */
-.row > * {
-            background-color: red;
-            min-height: 350px;
-            min-width: 100px;
-}
