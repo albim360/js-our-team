@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pageHeader {
+    text-align: center;
+}
+
+.pageHeader > h1 {
+    margin-top: 20px;
+}
+
+.pHeaderPage {
+    padding: 20px;
+    margin: 0 320px 50px;
+}
+
+
+/* DEBUG RULE */
+.row > * {
+            background-color: red;
+            min-height: 350px;
+            min-width: 100px;
+}
