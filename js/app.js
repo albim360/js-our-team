@@ -4,32 +4,32 @@ const teamMembers = [
     {
       name: "Wayne Barnett",
       role: "Founder & CEO",
-      photo: "img/wayne-barnett-founder-ceo.jpg"
+      photo: "./img/wayne-barnett-founder-ceo.jpg"
     },
     {
       name: "Angela Caroll",
       role: "Chief Editor",
-      photo: "img/angela-caroll-chief-editor.jpg"
+      photo: "./img/angela-caroll-chief-editor.jpg"
     },
     {
       name: "Walter Gordon",
       role: "Office Manager",
-      photo: "img/walter-gordon-office-manager.jpg"
+      photo: "./img/walter-gordon-office-manager.jpg"
     },
     {
       name: "Angela Lopez",
       role: "Social Media Manager",
-      photo: "img/angela-lopez-social-media-manager.jpg"
+      photo: "./img/angela-lopez-social-media-manager.jpg"
     },
     {
       name: "Scott Estrada",
       role: "Developer",
-      photo: "img/scott-estrada-developer.jpg"
+      photo: "./img/scott-estrada-developer.jpg"
     },
     {
       name: "Barbara Ramos",
       role: "Graphic Designer",
-      photo: "img/barbara-ramos-graphic-designer.jpg"
+      photo: "./img/barbara-ramos-graphic-designer.jpg"
     }
   ];
   
@@ -46,12 +46,12 @@ const teamMembersSection = document.getElementById('team-members');
 for (const member of teamMembers) {
   // Creiamo una nuova scheda del membro del team
   const card = document.createElement('div');
-  card.classList.add('col-auto');
+  card.classList.add('col-auto', 'my-3');
   card.innerHTML = `
-    <div class="card">
+    <div class="card-sm text-center bg-white p-2">
       <img src="${member.photo}" class="card-img-top" alt="${member.name}">
       <div class="card-body">
-        <h5 class="card-title">${member.name}</h5>
+        <h5 class="card-title my-1">${member.name}</h5>
         <p class="card-text">${member.role}</p>
       </div>
     </div>
